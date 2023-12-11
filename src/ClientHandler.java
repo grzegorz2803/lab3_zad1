@@ -19,6 +19,10 @@ public ClientHandler(Socket clientSocket, int clientNumber){
             String line;
             while ((line = fileReader.readLine())!=null){
                 outToClient.println(line);
+                for (int i = 0; i < 4; i++) {
+                    String option = fileReader.readLine();
+                    outToClient.println(option); // Wysyłaj warianty odpowiedzi
+                }
                 String response = inFromCLient.readLine();
                 System.out.println("Klient "+clientNumber+" odpowiedzial: "+response);
 
