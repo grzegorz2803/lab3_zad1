@@ -3,48 +3,58 @@
    b. Paryż
    c. Londyn
    d. Madryt
+   b
 2. Który pierwiastek chemiczny reprezentowany jest symbolem "O"?**
    a. Tlen
    b. Wodór
    c. Azot
    d. Sód
+   a
 3. Kto napisał "Romeo i Julia"?**
    a. Charles Dickens
    b. William Shakespeare
    c. Jane Austen
    d. Fiodor Dostojewski
+   b
 4. Jaki kolor ma tradycyjnie skrzynka na listy?**
    a. Czerwony
    b. Zielony
    c. Niebieski
    d. Żółty
+   a
 5. Ile kontynentów jest na świecie?**
    a. 5
    b. 6
    c. 7
    d. 8
+   b
 6. Która planeta jest znana jako "Czerwona Planeta"?**
    a. Wenus
    b. Mars
    c. Jowisz
    d. Saturn
+   b
 7. Które zwierzę jest symbolem mądrości w wielu kulturach?**
    a. Sowa
    b. Tygrys
    c. Żyrafa
    d. Wąż
+   a
 8. Jak nazywa się proces, podczas którego roślina przetwarza światło na energię?**
    a. Fotosynteza
    b. Respiracja
    c. Fermentacja
    d. Dekompozycja
+   a
 9. Które państwo jest największe pod względem powierzchni?**
    a. Rosja
    b. Stany Zjednoczone
    c. Kanada
    d. Australia
+   a
 10. Co oznacza skrót HTML w kontekście informatyki?**
    a. HyperText Markup Language
    b. HighTech Modern Language
    c. Hotmail
    d. HyperTransfer Machine Language
+   a
