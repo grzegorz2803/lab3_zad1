@@ -15,7 +15,14 @@ public ClientHandler(Socket clientSocket, int clientNumber){
             BufferedReader fileReader = new BufferedReader(new FileReader("s.txt"));
             PrintWriter outToClient = new PrintWriter(clientSocket.getOutputStream(), true);
             BufferedReader inFromCLient = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            outToClient.println("Podaj imie i nazwisko: ");
+            String name = inFromCLient.readLine();
+            try(PrintWriter writer = new PrintWriter(new FileWriter("c.txt",true))){
 
+                writer.println(name);
+            }catch (IOException e){
+                e.printStackTrace();
+            }
             String line;
             while ((line = fileReader.readLine())!=null){
                 outToClient.println(line);
@@ -24,10 +31,12 @@ public ClientHandler(Socket clientSocket, int clientNumber){
                     outToClient.println(option); // Wysyłaj warianty odpowiedzi
                 }
                 String response = inFromCLient.readLine();
+
                 System.out.println("Klient "+clientNumber+" odpowiedzial: "+response);
 
                 try(PrintWriter writer = new PrintWriter(new FileWriter("c.txt",true))){
-                    writer.println(response);
+
+                        writer.println(line+":  "+response);
                 }catch (IOException e){
                     e.printStackTrace();
                 }
