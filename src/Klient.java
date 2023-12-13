@@ -18,7 +18,8 @@ public class Klient {
             String line;
             while ((line = inFromServer.readLine()) != null) {
                 System.out.println(line); // Wypisz pytanie
-
+                if(line.contains("Twój wynik:"))
+                    break;
 
                 for (int i = 0; i < 4; i++) {
                     String option = inFromServer.readLine(); // Odbierz warianty odpowiedzi
