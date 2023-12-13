@@ -1,15 +1,13 @@
 import java.io.*;
-import java.lang.reflect.Array;
 import java.net.Socket;
 import java.nio.channels.FileChannel;
 import java.nio.channels.FileLock;
 import java.util.ArrayList;
 
 public class ClientHandler implements Runnable {
-private Socket clientSocket;
-private  int clientNumber;
-private  String name;
-private int result;
+private final Socket clientSocket;
+private final int clientNumber;
+    private int result;
 
 
 public ClientHandler(Socket clientSocket, int clientNumber){
@@ -29,7 +27,7 @@ public ClientHandler(Socket clientSocket, int clientNumber){
             PrintWriter outToClient = new PrintWriter(clientSocket.getOutputStream(), true);
             BufferedReader inFromCLient = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             outToClient.println("Podaj imie i nazwisko: ");
-            name = inFromCLient.readLine();
+            String name = inFromCLient.readLine();
 
 
             String line;
@@ -42,7 +40,6 @@ public ClientHandler(Socket clientSocket, int clientNumber){
                 }
                 goodAnswers.add(fileReader.readLine().trim());
                 String response = inFromCLient.readLine();
-
                 System.out.println("Klient " + clientNumber + " odpowiedzial: " + response);
                 answers.add(response);
             }
@@ -76,20 +73,6 @@ public ClientHandler(Socket clientSocket, int clientNumber){
             }catch (IOException e){
                 e.printStackTrace();
             }
-//                try(PrintWriter writer = new PrintWriter(new FileWriter("bazaOdpowiedzi.txt",true))){
-//                        writer.println(name);
-//                        for (int i=0;i<question.size();i++){
-//                            writer.println(question.get(i)+": "+answers.get(i));
-//                        }
-//                }catch (IOException e){
-//                    e.printStackTrace();
-//                }
-//                try(PrintWriter writer = new PrintWriter(new FileWriter("wyniki.txt",true))){
-//                    writer.println(name+": "+result+"/10");
-//
-//                }catch (IOException e){
-//                    e.printStackTrace();
-//                }
 
             fileReader.close();
             inFromCLient.close();

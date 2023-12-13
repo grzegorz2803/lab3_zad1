@@ -40,12 +40,12 @@ public class Klient {
                 });
 
                 try {
-                    future.get(20, TimeUnit.SECONDS);
+                    future.get(5, TimeUnit.SECONDS);
 
                 } catch (TimeoutException e) {
                     System.err.println("Czas upłynął");
 
-                    outToServer.println("e"); // Przesłanie pustej odpowiedzi
+                    outToServer.println(""); // Przesłanie pustej odpowiedzi
                     outToServer.flush();
                 } catch (InterruptedException | ExecutionException e) {
                     e.printStackTrace();
