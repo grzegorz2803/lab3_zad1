@@ -40,7 +40,7 @@ public class Klient {
                 });
 
                 try {
-                    future.get(5, TimeUnit.SECONDS);
+                    future.get(20, TimeUnit.SECONDS);
 
                 } catch (TimeoutException e) {
                     System.err.println("Czas upłynął");

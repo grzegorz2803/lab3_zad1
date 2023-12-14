@@ -1,0 +1,22 @@
+Grzegorz
+1. Jakie jest stolica Francji?**: a
+2. Który pierwiastek chemiczny reprezentowany jest symbolem "O"?**: a
+3. Kto napisał "Romeo i Julia"?**: b
+4. Jaki kolor ma tradycyjnie skrzynka na listy?**: d
+5. Ile kontynentów jest na świecie?**: a
+6. Która planeta jest znana jako "Czerwona Planeta"?**: b
+7. Które zwierzę jest symbolem mądrości w wielu kulturach?**: c
+8. Jak nazywa się proces, podczas którego roślina przetwarza światło na energię?**: d
+9. Które państwo jest największe pod względem powierzchni?**: a
+10. Co oznacza skrót HTML w kontekście informatyki?**: a
+Mariusz
+1. Jakie jest stolica Francji?**: d
+2. Który pierwiastek chemiczny reprezentowany jest symbolem "O"?**: c
+3. Kto napisał "Romeo i Julia"?**: c
+4. Jaki kolor ma tradycyjnie skrzynka na listy?**: a
+5. Ile kontynentów jest na świecie?**: b
+6. Która planeta jest znana jako "Czerwona Planeta"?**: a
+7. Które zwierzę jest symbolem mądrości w wielu kulturach?**: c
+8. Jak nazywa się proces, podczas którego roślina przetwarza światło na energię?**: d
+9. Które państwo jest największe pod względem powierzchni?**: a
+10. Co oznacza skrót HTML w kontekście informatyki?**: a
